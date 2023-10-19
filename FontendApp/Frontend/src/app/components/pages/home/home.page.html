@@ -1,0 +1,52 @@
+<ion-content>
+
+  <ion-row>
+
+    <ion-col class="home_cont">
+      <!-- Img para el modo oscuro -->
+      <span *ngIf="darkMode;">
+        <img src="../../assets/img/LOGO_QUIENPARA.png" width="100%" height="auto" alt="" srcset="">
+      </span>
+
+      <!-- Img para el modo claro -->
+      <span *ngIf="darkMode === false;">
+        <img src="../../assets/img/LOGO_QUIENPARA.png" width="100%" height="auto" alt="" srcset="">
+      </span>
+
+      <ion-row style="margin-top: 20px;">
+        <ion-col size="12">
+          <p style="text-align: justify; font-size: 14px;">
+            ¡Bienvenido a nuestra innovadora aplicación para contratar
+            y ofrecer servicios! Aquí podras encontrar una amplia gama
+            de personal con experiencia dispuestos a ayudarte con tus
+            necesidades, o si tienes habilidades para compartir, podrás
+            conectarte con usuarios que buscan tus servicios. <br />
+            !Explora, elige y comienza a hacer realidad tus proyectos
+            hoy mismo!
+          </p>
+          <p
+            style="margin-top: 10px; text-align: center !important; color: #ffc409; font-size: 13px; margin-top: 10px;">
+            DEJANOS HACER TU
+            VIDA MAS
+            FACIL</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="margin-top: 30px;">
+        <ion-col size="6">
+          <ion-button color="light" class="btn" (click)="userType(true)">
+            Contratante
+          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button color="warning" class="btn" (click)="userType(false)">
+            Contratista
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>
