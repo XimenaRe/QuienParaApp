@@ -1,0 +1,100 @@
+<ion-content>
+
+  <ion-row>
+    <ion-col class="home_cont">
+      <img src="../../assets/img/LOGO_QUIENPARA.png" width="100%" height="auto" alt="Logo Quienpara">
+
+      <form [formGroup]="signupForm">
+        <h2>REGISTRARME</h2>
+        <ion-row class="text-center">
+          <ion-col size="12">
+            <input class="nombre" type="text" placeholder="Nombres..." formControlName="nombre" required>
+            <span *ngIf="signupForm.controls.nombre.touched && signupForm.controls.nombre.invalid">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.nombre.errors.required">
+                    * Este campo es obligatorio!.
+                  </ion-label>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.nombre.errors.pattern">
+                    * Hay caracteres no validos!.
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </span>
+          </ion-col>
+          <ion-col size="12">
+            <input class="apellido" type="text" placeholder="Apellidos..." formControlName="apellido" required>
+            <span *ngIf="signupForm.controls.apellido.touched && signupForm.controls.apellido.invalid">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.apellido.errors.required">
+                    * Este campo es obligatorio!.
+                  </ion-label>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.apellido.errors.pattern">
+                    * Hay caracteres no validos!.
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </span>
+          </ion-col>
+          <ion-col size="12">
+            <input class="email" type="email" placeholder="Correo eletronico..." formControlName="email" required>
+            <span *ngIf="signupForm.controls.email.touched && signupForm.controls.email.invalid">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.email.errors.required">
+                    * El correo eletronico es obligatorio!.
+                  </ion-label>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.email.errors.pattern">
+                    * El correo no es valido!.
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </span>
+          </ion-col>
+          <ion-col size="12">
+            <input class="password" type="password" placeholder="Contraseña" formControlName="password" required>
+            <span *ngIf="signupForm.controls.password.touched && signupForm.controls.password.invalid">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="signupForm.controls.password.errors.required">
+                    * El correo eletronico es obligatorio!.
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </span>
+          </ion-col>
+          <ion-col size="12">
+            <input class="password_conf" type="password" placeholder="Confirmar contraseña"
+              formControlName="password_conf" required>
+              <ion-label color="danger" *ngIf="password_wrong">
+                * Las contraseñas no coinciden!.
+              </ion-label>
+          </ion-col>
+          <ion-col size=" 12">
+            <ion-button color="light" class="log_in" type="submit" (click)="handleSubmit()"
+              [disabled]="!(signupForm.valid && signupForm.dirty)">
+              Registrarme
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+
+      <ion-row class=" text-center">
+        <ion-col size="5" class="newt-link">
+          <a [routerLink]="['/auth/signIn']">Iniciar sesión</a>
+        </ion-col>
+        <ion-col size="7" class="newt-link">
+          <a [routerLink]="['/auth/recovery']">Olvidé mi contraseña</a>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

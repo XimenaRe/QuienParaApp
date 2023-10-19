@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <br>
+  <ion-row class="cont">
+    <ion-col size="12">
+      <ion-row>
+        <ion-col size="8" class="text-co">
+          <span>Crear oferta</span>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button color="warning" class="log_in" [routerLink]="['/contracting/tabs/tab1']">
+            Cancelar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <form [formGroup]="signupForm">
+
+      <ion-col size="12">
+        <br />
+        <h3>Clasificación: {{name_type}}</h3>
+
+        <ion-row class="text-center">
+          <ion-col size="12" class="text-of">
+            <input class="input_" type="text" placeholder="Descripción de la oferta..." formControlName="description">
+          </ion-col>
+          <ion-col size="12" class="text-of">
+            <input class="input_" type="text" placeholder="Dirección..." formControlName="address">
+          </ion-col>
+          <ion-col size="12" class="text-of">
+            <input class="input_" type="text" placeholder="Tiempo de ejecución..." formControlName="time">
+          </ion-col>
+          <ion-col size="12" class="text-of">
+            <input type="file" class="input-file-dark" placeholder="Foto" formControlName="photo"
+              (change)="onFileSelected($event)" id="fileInput">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-row>
+          <ion-col size="12">
+            <ion-button color="warning" class="log_in" type="submit" expand="block" (click)="handleSubmit()">
+              Publicar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </form>
+  </ion-row>
+
+</ion-content>

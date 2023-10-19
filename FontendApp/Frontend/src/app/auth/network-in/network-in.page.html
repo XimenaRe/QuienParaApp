@@ -1,0 +1,41 @@
+<ion-content>
+
+  <ion-row>
+
+    <ion-col class="home_cont">
+
+      <ion-row>
+        <img src="../../assets/img/LOGO_QUIENPARA.png" width="100%" height="auto" alt="Logo Quien Para">
+
+        <ion-col size="12">
+          <ion-button color="dark" class="netw_btn"
+            (click)="no_disponible('Por el momento la opción de Facebook no está disponible')">
+            Conectar con Facebook
+          </ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button color="dark" class="netw_btn" (click)="no_disponible('Por el momento la opción de Google no está disponible')">
+            Conectar con Google
+          </ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button color="light" class="netw3" (click)="no_disponible('Por el momento la opción de Célular no está disponible')">
+            Usar mi número de celular
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6" class="newt-link">
+          <a href="/auth/signIn">Iniciar sesión</a>
+        </ion-col>
+        <ion-col size="6" class="newt-link">
+          <a href="/auth/recovery">Olvidé mi contraseña</a>
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

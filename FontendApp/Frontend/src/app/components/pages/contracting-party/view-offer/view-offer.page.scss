@@ -1,0 +1,52 @@
+ion-content {
+  --background: #ffff;
+  --color: #000000;
+  text-align: center;
+  align-items: center;
+}
+
+.icon-size {
+  margin-top: 7%;
+}
+
+.contentImg img {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.cont {
+  margin: 10px;
+}
+
+.cont .text-co {
+  text-align: left !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.input_ {
+  width: 100%;
+  border-radius: 10px;
+  height: 45px;
+  font-weight: 600;
+  padding: 9px;
+  color: white;
+  box-shadow: -2px 3px 4px 1px rgba(133, 126, 126, 0.3);
+}
+
+.text-of {
+  margin-top: 5px;
+}
+
+.btn-cp {
+  margin-top: 40px;
+}
+
+.input-file-dark {
+  background-color: #333;
+  color: white;
+  border: 1px solid #666;
+  padding: 10px 0 10px 0;
+  border-radius: 9px;
+}

@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <br>
+  <ion-row class="cont">
+    <ion-col size="12">
+      <ion-row>
+        <ion-col size="8" class="text-co">
+          <span>Ver mis ofertas</span>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button color="warning" class="log_in" [routerLink]="['/contracting/tabs/tab1']">
+            REGRESAR
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+
+    <ion-col size="12">
+      <br />
+      <ion-card *ngFor="let row of offerData">
+        <img [src]="row.photoOffer" alt="Imagen">
+        <ion-card-header>
+          <ion-card-title>Tipo de oferta: {{row.typeOffer}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <span>Dirección: {{row.descriptionOffer}}</span>
+          <br>
+          <span>Dirección: {{row.addressOffer}}</span>
+          <br>
+          <span>Tiempo de la oferta: {{row.timeOffer}}</span>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

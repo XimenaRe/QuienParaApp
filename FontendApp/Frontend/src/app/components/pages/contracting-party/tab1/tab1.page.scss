@@ -1,0 +1,43 @@
+ion-content {
+  --background: #ffff;
+  --color: #000000;
+  text-align: center;
+  align-items: center;
+}
+
+.cont {
+  margin: 0px 10px;
+}
+
+.cont .text-ct-fil {
+  text-align: left !important;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.cont .card {
+  border-radius: 20px;
+  --border-radius: 20px;
+  background-color: #ffec00;
+  color: #000000;
+}
+
+.cont ion-input {
+  background-color: #ffff;
+  --border-radius: 25px;
+  border-radius: 25px;
+  height: 35px;
+  width: 80%;
+  margin: 0 10%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.cont ion-input ion-icon {
+  margin-left: 12px;
+}
+
+ion-content {
+  --margin: 0 0 0 100px;
+  --border: color red 2px;
+}

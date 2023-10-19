@@ -1,0 +1,189 @@
+.formu {
+  width: 254px;
+  position: fixed;
+  top: 22%;
+  left: 13%;
+}
+
+.nom {
+  position: fixed;
+  top: 44%;
+}
+
+.celda2 {
+
+  width: 100px;
+  position: fixed;
+  top: 28%;
+  left: 13%;
+}
+
+.label-for {
+  position: fixed;
+  top: 46%;
+  left: 13%;
+}
+
+.celda3 {
+  position: fixed;
+  top: 34%;
+  left: 13%;
+}
+
+
+.label-dos {
+  position: fixed;
+  top: 62%;
+}
+
+.titulo {
+  position: fixed;
+  top: 76%;
+  left: 10%;
+}
+
+b {
+  position: fixed;
+  top: 18%;
+  left: 14%;
+}
+
+.publicar {
+
+  border-color: #00ff7b;
+  border: #000000;
+  width: 83px;
+  height: 25px;
+  border-radius: 10px;
+  position: relative;
+  bottom: -25%;
+  right: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 11);
+}
+
+.barra {
+  max-width: 84%;
+  position: relative;
+  top: 73px;
+  left: -7px;
+}
+
+.barra1 {
+  max-width: 84%;
+  position: relative;
+  top: 113px;
+  left: -7px;
+}
+
+.barra2 {
+  max-width: 84%;
+  position: relative;
+  top: 16px;
+  left: -8px;
+}
+
+
+.valor {
+  width: 250px;
+  height: 30px;
+  position: relative;
+  bottom: 4px;
+  border-radius: 10px;
+  border-style: none;
+  left: 1%;
+}
+
+.oferta {
+  width: 250px;
+  height: 30px;
+  position: relative;
+  bottom: 2px;
+  border-radius: 10px;
+  border-style: none;
+  left: 3%;
+}
+
+.tiempo {
+
+  width: 250px;
+  height: 30px;
+  position: relative;
+  bottom: 2px;
+  border-radius: 10px;
+  border-style: none;
+  left: 2%;
+}
+
+
+
+
+ion-content {
+  --background: #ffff;
+  --color: #000000;
+  text-align: center;
+  align-items: center;
+}
+
+.contentImg img {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+
+}
+
+.cont {
+  margin: 0px 10px;
+}
+
+.cont .text-ct-fil {
+  text-align: left !important;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.cont .card {
+  border-radius: 20px;
+  --border-radius: 20px;
+  background-color: #ffec00;
+  color: #000000;
+}
+
+.cont ion-input {
+  background-color: #ffff;
+  --border-radius: 25px;
+  border-radius: 25px;
+  height: 35px;
+  width: 80%;
+  margin: 0 10%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.cont ion-input ion-icon {
+  margin-left: 12px;
+}
+
+ion-content {
+  --margin: 0 0 0 100px;
+  --border: color red 2px;
+}
+
+//
+ion-header ion-toolbar ion-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.icon-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.icon2 {
+  background-color: #000000;
+}

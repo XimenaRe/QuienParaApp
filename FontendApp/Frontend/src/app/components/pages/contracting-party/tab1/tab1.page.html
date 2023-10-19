@@ -1,0 +1,62 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="cont">
+    <ion-col>
+      <ion-card class="card">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-input placeholder="Ubicación"><ion-icon name="location-outline"></ion-icon></ion-input>
+            </ion-col>
+            <br>
+            <ion-col size="12">
+              <span>Selecciona la fecha: </span>
+              <ion-datetime-button datetime="datetime"></ion-datetime-button>
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime" locale="es-ES" hourCycle="h12" [isDateEnabled]="isWeekday"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-col>
+
+    <ion-row>
+      <ion-col size="6">
+        <div>
+          <a title="Plomeria" (click)="global_alert('1')"><img src="../../assets/img/PLOMERIA.png" alt="" /></a>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div>
+          <a title="Pintura" (click)="global_alert('2')"><img src="../../assets/img/PINTURA.png" alt="" /></a>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div>
+          <a title="Contrucción" (click)="global_alert('3')"><img src="../../assets/img/Construccion.png" alt="" /></a>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div>
+          <a title="Eletricidad" (click)="global_alert('4')"><img src="../../assets/img/Electricidad2.png" alt="" /></a>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div>
+          <a title="Jardineria" (click)="global_alert('5')"><img src="../../assets/img/JARDINERIA.png" alt="" /></a>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div>
+          <a title="Carpinteria" (click)="global_alert('6')"><img src="../../assets/img/CARPINTERIA.png" alt="" /></a>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-row>
+</ion-content>

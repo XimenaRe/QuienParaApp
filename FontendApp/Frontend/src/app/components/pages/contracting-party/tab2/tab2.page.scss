@@ -1,0 +1,28 @@
+ion-content {
+  text-align: center;
+  align-items: center;
+}
+.text-new-ofert {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: left;
+}
+.cont {
+  margin: 5%;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+hr {
+  width: 100%;
+  border: 1px solid black;
+  height: 0px;
+}
+.list-opctions {
+  --background: #ffff !important;
+}
+
+

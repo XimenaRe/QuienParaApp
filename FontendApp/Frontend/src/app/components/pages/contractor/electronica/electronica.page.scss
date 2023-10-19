@@ -1,0 +1,173 @@
+.boton{
+    border-color: #00ff7b;
+    border:#000000;
+    width: 75px;
+    height: 27px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 306px;
+    right: -13px;
+    background-color: rgb(247, 247, 9);
+    
+   }
+   .boton1{
+    border: #000000;
+    width: 75px;
+    height: 27px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 306px;
+    right: -19px;
+    background-color: rgb(8 8 1);
+    color: rgb(247, 247, 9);
+   }
+   .boton2{
+    border-color: #00ff7b;
+    border:#000000;
+    width: 75px;
+    height: 27px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+    right: 138px;;
+    background-color: rgb(247, 247, 9);
+   }
+   .boton3{
+    border-color: #00ff7b;
+    border:#000000;
+    width: 75px;
+    height: 27px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+    right: 129px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(247, 247, 9);
+   }
+
+   .pinta{
+    position: relative;
+    top: -247px;
+    left: -1%;
+    height: 253px;
+    width: 99%;
+
+   }
+
+   .electri{
+    position: relative;
+    top: 52%;
+    left: -1%;
+    height: 251px;
+    width: 101%;
+}
+
+.icon4{
+    
+    background-color: black;
+}
+
+.icon1{
+    background-color: black;
+}
+
+.icon2{
+    background-color: black;
+}
+
+.icon3{
+    background-color: black;
+}
+
+
+.md_hydrated{
+    background-color: black;
+}
+
+.elect{
+    width: 38%;
+    height: 30%;
+    top: 18%;
+    position: fixed;
+    left: 56%;
+}
+.pintaimg{
+    width: 38%;
+    height: 30%;
+    top: 58%;
+    position: fixed;
+    left: 56%;
+}
+
+
+
+
+
+ion-content {
+    --background: #ffff;
+    --color: #000000;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .contentImg img {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .cont {
+    margin: 0px 10px;
+  }
+  
+  .cont .text-ct-fil {
+    text-align: left !important;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .cont .card {
+    border-radius: 20px;
+    --border-radius: 20px;
+    background-color: #ffec00;
+    color: #000000;
+  }
+  
+  .cont ion-input {
+    background-color: #ffff;
+    --border-radius: 25px;
+    border-radius: 25px;
+    height: 35px;
+    width: 80%;
+    margin: 0 10%;
+    padding-left: 10%;
+    text-align: left;
+  }
+  
+  .cont ion-input ion-icon {
+    margin-left: 12px;
+  }
+  
+  ion-content {
+    --margin: 0 0 0 100px;
+    --border: color red 2px;
+  }
+  
+  //
+  ion-header ion-toolbar ion-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+  }
+  
+  .icon-size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    color: white;
+  }
+
+

@@ -1,0 +1,148 @@
+ion-header ion-toolbar ion-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton {
+  border-color: #00ff7b;
+  border: #000000;
+  width: 75px;
+  height: 18px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 214px;
+  right: -34px;
+  background-color: rgb(247, 247, 9);
+
+}
+
+.boton1 {
+  border-color: #00ff7b;
+  border: #000000;
+  width: 75px;
+  height: 18px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 40px;
+  right: 37px;
+  background-color: rgb(247, 247, 9);
+}
+
+.boton2 {
+  border-color: #00ff7b;
+  border: #000000;
+  width: 75px;
+  height: 18px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 394px;
+  right: 115px;
+  background-color: rgb(247, 247, 9);
+}
+
+.boton4 {
+  border: #000000;
+  width: 75px;
+  height: 18px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 563px;
+  right: 193px;
+
+  background-color: rgb(247, 247, 9);
+}
+
+.imagen {
+  width: 300px;
+
+}
+
+.texto1 {
+  right: 123px;
+}
+
+img {
+  max-width: 100%;
+  width: 358px;
+}
+
+.contentImg {
+  background-color: black;
+}
+
+
+
+
+ion-content {
+  --background: #ffff;
+  --color: #000000;
+  text-align: center;
+  align-items: center;
+}
+
+.contentImg img {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+
+}
+
+.cont {
+  margin: 0px 10px;
+}
+
+.cont .text-ct-fil {
+  text-align: left !important;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.cont .card {
+  border-radius: 20px;
+  --border-radius: 20px;
+  background-color: #ffec00;
+  color: #000000;
+}
+
+.cont ion-input {
+  background-color: #ffff;
+  --border-radius: 25px;
+  border-radius: 25px;
+  height: 35px;
+  width: 80%;
+  margin: 0 10%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.cont ion-input ion-icon {
+  margin-left: 12px;
+}
+
+ion-content {
+  --margin: 0 0 0 100px;
+  --border: color red 2px;
+}
+
+
+/* Animación con keyframe llamada "latidos" */
+@keyframes latidos {
+  from {
+    transform: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: none;
+  }
+}

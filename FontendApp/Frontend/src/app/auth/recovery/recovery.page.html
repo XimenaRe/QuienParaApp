@@ -1,0 +1,53 @@
+<ion-content>
+
+  <ion-row>
+
+    <ion-col class="home_cont">
+      <img src="../../assets/img/LOGO_QUIENPARA.png" width="100%" height="auto" alt="" srcset="">
+
+      <form [formGroup]="forgotPasswordForm">
+        <ion-row class="text-center">
+
+          <ion-col size="12">
+            <span class="text-email">Recuperar contraseña</span>
+            <input class="email" type="email" name="" id="" placeholder=" Correo Electónico" style="padding:15px;"
+              formControlName="email">
+            <span *ngIf="forgotPasswordForm.controls.email.touched && forgotPasswordForm.controls.email.invalid">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="forgotPasswordForm.controls.email.errors.required">
+                    * El correo eletronico es obligatorio!.
+                  </ion-label>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label color="danger" *ngIf="forgotPasswordForm.controls.email.errors.pattern">
+                    * El correo no es valido!.
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+            </span>
+          </ion-col>
+
+          <ion-col size="12" class="log_in">
+            <ion-button color="light" (click)="handleSubmit()"
+              [disabled]="!(forgotPasswordForm.valid && forgotPasswordForm.dirty)">
+              Enviar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+
+      <ion-row class=" text-center">
+        <ion-col size="6" class="newt-link">
+          <a href="/auth/network">Iniciar con redes</a>
+        </ion-col>
+        <ion-col size="6" class="newt-link">
+          <a href="/auth/signIn">Iniciar sesión</a>
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>
