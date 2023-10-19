@@ -1,0 +1,136 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// Estilos globales
+.home_cont {
+  margin-top: calc(100% - 55%) !important;
+  margin: 0 10%;
+  font-weight: 500;
+
+  input {
+    padding: 16px;
+  }
+}
+
+.home_cont .text-center {
+  text-align: center;
+  --font-size: 12px;
+}
+
+// Global Icons
+ion-icon {
+  font-size: 33px;
+}
+
+// Color de la alerta
+.alert-button.sc-ion-alert-md {
+  color: white;
+}
+
+/* Personaliza los estilos de los botones en el alert */
+.custom-alert-button {
+  &.button-accept {
+    --background: #34d399;
+    --color: white;
+  }
+
+  &.button-cancel {
+    --background: #ef4444;
+    --color: white;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home_cont {
+    margin-top: 10%;
+
+    img {
+      margin-top: -10%;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .home_cont {
+    margin-top: 20%;
+  }
+
+  .newt-link a {
+    display: flex;
+    --align-items: center;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    --text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 30px;
+    color: #ffff;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-left: calc(100% - 60%);
+  }
+
+  .newt-link a:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .home_cont {
+    margin-top: 15%;
+  }
+
+  .newt-link a {
+    display: flex;
+    --align-items: center;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    --text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 30px;
+    color: #ffff;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-left: calc(100% - 60%);
+  }
+
+  .newt-link a:hover {}
+}
+
+// Fuente definida
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: url("./fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+* {
+  font-family: "MYRIADPRO-REGULAR", sans-serif;
+}
