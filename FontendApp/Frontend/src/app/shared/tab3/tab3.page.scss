@@ -1,0 +1,36 @@
+ion-content {
+  --background: #ffff;
+  --color: #000000;
+  text-align: center;
+}
+
+ion-avatar img {
+  width: 60px;
+}
+
+ion-card-content {
+  text-align: left;
+}
+
+.chat-icon {
+  color: #ffec00;
+  margin-top: -25px;
+  margin-left: 85%;
+  animation: latidos 1s alternate;
+  transform-origin: center;
+}
+
+/* Animación con keyframe llamada "latidos" */
+@keyframes latidos {
+  from {
+    transform: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: none;
+  }
+}

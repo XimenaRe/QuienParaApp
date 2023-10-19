@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-row class="cont">
+    <ion-col>
+      <ion-row>
+        <hr>
+        <ion-col size="12">
+          <ion-item>
+            <ion-icon slot="start" name="moon"></ion-icon>
+            <ion-label>Desactivar modo oscuro: </ion-label>
+            <ion-toggle slot="end" (ionChange)='toggleTheme($event)'></ion-toggle>
+          </ion-item>
+        </ion-col>
+        <hr>
+        <ion-col size="12">
+          <ion-list [inset]="true" class="list-opctions">
+            <ion-item>
+              <ion-label>Términos y condicones</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Seguridad y privacidad</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Ayuda</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label (click)="salir()">Cerrar sesión</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

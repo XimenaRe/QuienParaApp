@@ -1,0 +1,197 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card style="margin-bottom: 25px;">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card-header>
+          <ion-card-title>NOTIFICACIONES</ion-card-title>
+        </ion-card-header>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="3">
+        <ion-card-header>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head"
+              src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067" />
+          </ion-avatar>
+        </ion-card-header>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-content (click)="navegacion()">
+          <ion-card-title> Juan Sebastian Hernandez Cardenas
+          </ion-card-title>
+          <ion-card-subtitle>Ingeniero de Software</ion-card-subtitle>
+          <ion-icon name="chatbubble-outline" class="chat-icon"></ion-icon>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-row>
+      <ion-col size="3">
+        <ion-card-header>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://cdn-icons-png.flaticon.com/512/6009/6009017.png" />
+          </ion-avatar>
+        </ion-card-header>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-content (click)="navegacion()">
+          <ion-card-title> Juan Diego Cardenas
+          </ion-card-title>
+          <ion-card-subtitle>Electricista</ion-card-subtitle>
+          <ion-icon name="chatbubble-outline" class="chat-icon"></ion-icon>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="3">
+        <ion-card-header>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSO4KuamawLJa5Msh93MFUleYSagRXfg-aqQ&usqp=CAU" />
+          </ion-avatar>
+        </ion-card-header>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-content (click)="navegacion()">
+          <ion-card-title> Mesi Osorio Martin
+          </ion-card-title>
+          <ion-card-subtitle>Maestro de contrucción</ion-card-subtitle>
+          <ion-icon name="chatbubble-outline" class="chat-icon"></ion-icon>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="3">
+        <ion-card-header>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head"
+              src="https://w7.pngwing.com/pngs/390/276/png-transparent-cartoon-plumber-repairman-thumbnail.png" />
+          </ion-avatar>
+        </ion-card-header>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-content (click)="navegacion()">
+          <ion-card-title> Jualian Castro Reyes
+          </ion-card-title>
+          <ion-card-subtitle>Plomero</ion-card-subtitle>
+          <ion-icon name="chatbubble-outline" class="chat-icon"></ion-icon>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="3">
+        <ion-card-header>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head"
+              src="https://apollo-virginia.akamaized.net/v1/files/gpg7aoof04pr2-CO/image;s=272x0" />
+          </ion-avatar>
+        </ion-card-header>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-content (click)="navegacion()">
+          <ion-card-title> Juan Carlos Gutierrez
+          </ion-card-title>
+          <ion-card-subtitle>Ornamentador</ion-card-subtitle>
+          <ion-icon name="chatbubble-outline" class="chat-icon"></ion-icon>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="3">
+        <ion-card-header>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head"
+              src="https://static.vecteezy.com/system/resources/previews/003/704/363/non_2x/woman-mechanic-concept-free-vector.jpg" />
+          </ion-avatar>
+        </ion-card-header>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card-content (click)="navegacion()">
+          <ion-card-title> Maria Alejandra Cardenas
+          </ion-card-title>
+          <ion-card-subtitle>Mecanica</ion-card-subtitle>
+          <ion-icon name="chatbubble-outline" class="chat-icon"></ion-icon>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+</ion-content>
+
+
+
+<!-- <ion-content [fullscreen]="true">
+
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="2">
+      </ion-col>
+      <ion-col>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="2">
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+
+  <ion-content>
+    <ion-grid>
+      <ion-row *ngFor="let message of messages">
+        <ion-col size="9" *ngIf="currentUser !==message.user" class="message other-message">
+          <b>{{ message.user }}</b><br>
+          <span>{{ message.msg }}</span>
+          <div class="time" text right><br>
+            {{ message.createAt | date:'short' }}
+          </div>
+        </ion-col>
+
+        <ion-col offset="3" size="9" *ngIf="currentUser === message.user" class="message my-message">
+          <b>{{ message.user }}</b><br>
+          <span>{{ message.msg }}</span>
+          <div class="time" text right><br>
+            {{ message.createAt | date:'short' }}
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="light">
+      <ion-row>
+        <ion-col size="10">
+          <textarea autosize maxRows="3" [(ngModel)]="newMsg" class="message-input"></textarea>
+        </ion-col>
+        <ion-col size="2">
+
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content> -->
